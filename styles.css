@@ -1,0 +1,462 @@
+@import "reset.css";
+@import "major.css";
+
+
+body{
+  background-color: #000;
+    overflow-x: hidden;
+}
+header a{
+  color: #000;
+}
+
+/* header nav .underline{
+  left: 0vw;
+  width: 20vw;
+  transition: 400ms ease-in-out;
+} */
+
+.wrapper .top img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -2;
+}
+.wrapper .top .sliders{
+  padding-top: 30vw;
+}
+.wrapper .top .slider{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5vw;
+}
+.wrapper .top .slider > div{
+  width: 12vw;
+  height: 0.15vw;
+  background-color: #fff;
+}
+.wrapper .top .slider div:nth-of-type(2){
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 100%;
+  margin-left: 1vw;
+  background-color: #fff;
+}
+.wrapper .top .slider a{
+  margin-left: 1vw;
+}
+.wrapper .top .slider:hover{
+  margin-left: 5vw;
+  transition: 300ms ease-in-out;
+}
+.service{
+  margin-top: 22vw;
+  margin-left: 6vw;
+}
+.top + h3{
+  position: fixed;
+  color: var(--orange);
+  transform-origin: left;
+  transform: rotate(-90deg);
+  margin-left: 2vw;
+  z-index: -3;
+}
+.service a div{
+  display: flex;
+  align-items: center;
+  margin-top: 2vw;
+}
+.service .bike > img{
+  display: none;
+}
+.service .bike img:nth-of-type(2){
+  display: block;
+}
+.service img{
+  width: 3.5vw;
+}
+.service img:hover{
+  transform: rotate(25deg);
+}
+.service a h2{
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 4vw;
+}
+.service a h2:hover{
+  color: var(--orange);
+}
+
+.trails{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.trail{
+  margin-left: 7.5vw;
+  margin-top: 5vw;
+}
+.trail > img{
+  position: absolute;
+  width: 92.5vw;
+  z-index: -2;
+  filter: brightness(0.4);
+}
+
+.trail .route p{
+  position: absolute;
+  font-size: 1.7vw;
+}
+
+.trail:first-child .route img{
+  width: 70vw;
+  margin-left: 15vw;
+  margin-top: 3vw;
+}
+.trail:first-child .route p:first-child{
+  margin-left: 7vw;
+  margin-top: 3vw;
+}
+.trail:first-child .route p:last-child{
+  margin-left: 80vw;
+  width: 10vw;
+  margin-top: -3vw;
+}
+
+.trail:nth-of-type(2) .route img{
+  width: 67.5vw;
+  margin-left: 15vw;
+  margin-top: 3vw;
+}
+.trail:nth-of-type(2) .route p:first-child{
+  margin-left: 5vw;
+  margin-top: 3.5vw;
+}
+.trail:nth-of-type(2) .route p:last-child{
+  margin-left: 70vw;
+  width: 10vw;
+  margin-top: -1.5vw;
+}
+
+.trail:nth-of-type(3) .route img{
+  width: 67.5vw;
+  margin-left: 15vw;
+  margin-top: 1vw;
+}
+.trail:nth-of-type(3) .route p:first-child{
+  margin-left: 10vw;
+  margin-top: 0.5vw;
+}
+.trail:nth-of-type(3) .route p:last-child{
+  margin-left: 72vw;
+  width: 10vw;
+  margin-top: -1.5vw;
+}
+
+.trail:nth-of-type(4) .route img{
+  width: 75vw;
+  margin-left: 15vw;
+  margin-top: 1vw;
+}
+.trail:nth-of-type(4) .route p:first-child{
+  margin-left: 5vw;
+  margin-top: 1.3vw;
+}
+.trail:nth-of-type(4) .route p:last-child{
+  margin-left: 72vw;
+  width: 10vw;
+  margin-top: -1.5vw;
+}
+
+.service + h3{
+  position: fixed;
+  color: var(--orange);
+  transform-origin: left;
+  transform: rotate(-90deg);
+  margin-left: 2vw;
+  z-index: -3;
+}
+.rating{
+  display: flex;
+  position: absolute;
+  margin-top: 1vw;
+  margin-left: 80vw;
+}
+.rating .stars{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5vw;
+}
+.rating .stars img{
+  width: 2.6vw;
+  align-items: center;
+}
+.rating h2{
+  font-family: "Hagrid Regular", helvetica, sans-serif;
+  font-size: 9vw;
+}
+.trail .btn{
+  background-color: var(--orange);
+  width: auto;
+  padding: 1vw;
+  width: 8vw;
+  margin-top: -6vw;
+  margin-left: 6vw;
+}
+.trail .btn:hover{
+  opacity: 0.7;
+  transition: 200ms ease;
+}
+
+.trails + h3{
+  position: fixed;
+  color: var(--orange);
+  transform-origin: left;
+  transform: rotate(-90deg);
+  margin-left: 2vw;
+  z-index: -3;
+}
+.coaches{
+  margin: 14vw 10vw auto 7.6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.coaches .name .hidden div{
+  width: 5vw;
+  height: 0.1vw;
+  background-color: var(--orange);
+}
+.coaches .name .hidden{
+  margin-top: 4vw;
+  margin-left: 2vw;
+}
+.coaches .name .hidden h2{
+ font-size: 1.6vw;
+ padding-bottom: 0.7vw;
+}
+.coaches .name img{
+ width: 21.2vw;
+ height: 32vw;
+ filter: grayscale(100%);
+}
+.coaches .name img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  transition: 200ms ease-in-out;
+}
+.coaches .name .hidden p{
+ padding-top: 0.7vw;
+}
+
+.about{
+  width: 75vw;
+  margin-top: 9vw;
+  margin-left: 12vw;
+}
+.about span{
+  color: #fff;
+  font-family: "FUTURA Reg", helvetica, sans-serif;
+}
+.about span:first-child{
+  font-size: 4vw;
+  font-family: "FUTURA Bold", helvetica, sans-serif;
+}
+.about span:last-child{
+  font-size: 2.4vw;
+  font-family: "FUTURA Reg", helvetica, sans-serif;
+  line-height: 1.3;
+}
+
+
+
+@media (max-width: 520px) {
+  body{
+    overflow-x: hidden;
+  }
+  .wrapper .top img{
+    width: 100%;
+    transform: scale(1.7);
+    margin-top: 15vw;
+  }
+  .wrapper .top .sliders{
+    padding-top: 60vw;
+  }
+  .wrapper .top .slider{
+    margin-top: 1.5vw;
+  }
+  .wrapper .top .slider > div{
+    width: 17vw;
+    height: 0.3vw;
+  }
+  .wrapper .top .slider div:nth-of-type(2){
+    width: 2vw;
+    height: 2vw;
+  }
+  .wrapper .top .slider a{
+    margin-left: 3vw;
+  }
+  .top + h3,
+  .service + h3{
+   display: none;
+  }
+  .service img{
+    width: 7vw;
+  }
+  .service{
+    margin-top: 15vw;
+  }
+  .service a h2{
+    margin-left: 4vw;
+  }
+  .service .bike > img{
+    display: block;
+  }
+  .service .bike img:nth-of-type(2){
+    display: none;
+  }
+  .trail{
+    margin-left: 0;
+    margin-top: 20vw;
+  }
+  .trail:nth-of-type(2){
+    margin-top: 21vw;
+  }
+  .trail:nth-of-type(3){
+    margin-top: 17vw;
+  }
+  .trail:last-child{
+    margin-top: 19vw;
+  }
+  .trail > img{
+    transform: scale(1.5);
+    position: absolute;
+    width: 100vw;
+    z-index: -2;
+    filter: brightness(0.6);
+  }
+  .trail .route p{
+    font-size: 3.5vw;
+  }
+  .trail:first-child .route img{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 3vw;
+  }
+  .trail:first-child .route p:first-child{
+    margin-left: 4vw;
+    margin-top: -3vw;
+  }
+  .trail:first-child .route p:last-child{
+    margin-left: 83vw;
+    margin-top: -3vw;
+  }
+
+  .trail:nth-of-type(2) .route img{
+    width: 90vw;
+    margin-left: 4vw;
+    margin-top: 3vw;
+  }
+  .trail:nth-of-type(2) .route p:first-child{
+    margin-top: -1.5vw;
+  }
+  .trail:nth-of-type(2) .route p:last-child{
+    margin-left: 73vw;
+  }
+
+  .trail:nth-of-type(3) .route img{
+    width: 90vw;
+    margin-left: 4vw;
+    margin-top: -6vw;
+  }
+  .trail:nth-of-type(3) .route p:first-child{
+    margin-top: -7vw;
+    margin-left: 14vw;
+  }
+  .trail:nth-of-type(3) .route p:last-child{
+    margin-left: 75vw;
+  }
+
+  .trail:nth-of-type(4) .route img{
+    width: 90vw;
+    margin-left: 6vw;
+    margin-top: 0vw;
+  }
+  .trail:nth-of-type(4) .route p:first-child{
+    margin-left: 5vw;
+    margin-top: -4vw;
+  }
+  .trail:nth-of-type(4) .route p:last-child{
+    margin-top: 2vw;
+  }
+
+  .rating{
+    align-items: center;
+    margin-left: 75vw;
+    margin-top: -7vw;
+  }
+  .rating .stars img{
+    width: 4.5vw;
+  }
+  .rating h2{
+    font-size: 17vw;
+  }
+  .trail .btn{
+    padding: 1.7vw;
+    width: 19vw;
+  }
+  .trail:nth-of-type(3) .btn{
+    margin-bottom: 2vw;
+  }
+
+
+  .coaches{
+    margin: 20vw 10vw auto 15vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .coaches .name .hidden div{
+    width: 15vw;
+    height: 0.3vw;
+  }
+  .coaches .name .hidden{
+    margin-top: 7vw;
+    margin-left: 2vw;
+  }
+  .coaches .name .hidden h2{
+   font-size: 5vw;
+   width: 20vw;
+   padding-bottom: 2vw;
+  }
+  .coaches .name .hidden p{
+   padding-top: 2vw;
+   width: 30vw;
+  }
+  .coaches .name img{
+   width: 31.8vw;
+   height: 48vw;
+  }
+
+
+
+  .about{
+    width: 80vw;
+    margin-top: 9vw;
+    margin-left: 8vw;
+  }
+  .about span:first-child{
+    font-size: 6vw;
+  }
+  .about span:last-child{
+    font-size: 4vw;
+  }
+
+}
+@media (max-width: 414px) {
+
+  .trail .btn{
+    padding: 1.7vw;
+    width: 22vw;
+  }
+}
